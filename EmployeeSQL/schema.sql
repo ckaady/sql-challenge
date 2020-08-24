@@ -8,7 +8,6 @@ CREATE TABLE IF NOT EXISTS departments
     PRIMARY KEY(dept_no)
 );
 
-DROP TABLE dept_emp 
 CREATE TABLE IF NOT EXISTS dept_emp
 (
     dept_no VARCHAR(30),
@@ -27,7 +26,7 @@ CREATE TABLE IF NOT EXISTS employees
     emp_title_id VARCHAR(5),
     birth_date DATE,
     first_name VARCHAR(30),
-    las_name VARCHAR(30),
+    last_name VARCHAR(30),
     sex CHARACTER(1),
     hire_date DATE,
     PRIMARY KEY(emp_no)
