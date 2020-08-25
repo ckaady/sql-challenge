@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS departments
 CREATE TABLE IF NOT EXISTS dept_emp
 (
     dept_no VARCHAR(30),
-    emp_no VARCHAR(30) NOT NULL    
+    emp_no INTEGER NOT NULL    
 );
 
 CREATE TABLE IF NOT EXISTS dept_manager
@@ -78,7 +78,7 @@ ALTER TABLE dept_emp
     MATCH SIMPLE
 ;
     
-
+SELECT * FROM dept_emp
 -- Create Indexes
 
 -- CSVs imported in this order: departments, titles, employees, dept_manager, salaries, dept_emp
